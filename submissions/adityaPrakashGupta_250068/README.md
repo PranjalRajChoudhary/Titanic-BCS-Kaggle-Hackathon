@@ -1,5 +1,5 @@
 # Titanic Survival Predictor
-#### - Aditya Prakash Gupta
+#### Made by **Aditya Prakash Gupta**
 
 The project uses logistic regression to predict survival rate of individuals and predict their accuracy.
 
