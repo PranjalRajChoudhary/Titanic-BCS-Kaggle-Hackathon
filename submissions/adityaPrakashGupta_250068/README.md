@@ -1,18 +1,16 @@
-# Titanic Survival Predictor
-#### Made by **Aditya Prakash Gupta**
+# Titanic Submission - Aditya Prakash Gupta
 
-The project uses logistic regression to predict survival rate of individuals and predict their accuracy.
+## Stats
+* **Kaggle Leaderboard Rank:** [e.g., 450/1000]
+* **Public Score (Accuracy):** `0.77033`
+* **Any other evaluation metrics**
 
-## Pipeline
-- **Cleaning the data and preprocessing it** -> Deleting columns which do not provide any important information to the model and handling null values.
-- **Analyzing Data** -> Visualizing and analyzing graphs to get familiar with data.
-- **Encoding and Scaling** -> OneHotEncoding the categorical values and scaling the numerical columns makes our data readable for regression model.
-- **Training and Testing** -> Training on train data and testing to create accurate predctions.
-- **Analyze Efficiency** -> Analyze how good the predictions are.
+## Approach
+* **Model Used:** Logistic Regression
+* **Data Handling:** Removed `Cabin` column because it had no useful information for the model. Used mean for null values in `Age` and the mode for `Embarked` columns.
+* **New Features:** Prediction of survival only
 
-## Key Prediction Analysis Results
-- Overall Accuracy of the model is `94.26%`
-- Class 0 (Did not Survive) has better precision,recall and accuracy as compared to class 1 (Survived).
-
-### An Abnormal Observation:
-On using linear regression on the model by rounding off the results, we get slightly better accuracy. This happens because most of the people in the model fall under class 0 category. Even though Linear regression is not the correct model to use in classification, an false improvement is seen because of the bias in training data itself.
+## Key Learnings
+* How logistic regressions work for classification and how it minimizes and punishes loss using log loss function.
+* Hyper Cleaning Data to get better prediction results.
+* Real life use of Logistic Regression
